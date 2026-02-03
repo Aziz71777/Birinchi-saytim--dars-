@@ -1,27 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    h1 {
-        color: blue;
-        text-align: center;
+  <meta charset="UTF-8">
+  <title>ModernUI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
-    p {
-        color: aqua;
-        text-align: center;
+
+    body {
+      min-height: 100vh;
     }
-    </style>
+
+    /* NAVBAR */
+    header {
+      background: #2f2f2f;
+      padding: 15px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #f5a623;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #3b9ad9, #7a5bd6);
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #eaeaea;
+      margin-bottom: 35px;
+    }
+
+    .hero button {
+      background: #f5a623;
+      border: none;
+      padding: 15px 35px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero button:hover {
+      background: #e5941f;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 25px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <header>
+    <div class="logo">ModernUI</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
     <div>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit.</p>
-    <p>salom mening ismim  azizbek men ilmla kelib dasturlashni o'rganib bormoqdamna mening ustozim mahmud u kishiga raxmatimni aytib qolaman</p>
-    <button> https://aziz71777.github.io/Birinchi-saytim--dars-/</button>
-    
+      <h1>Elevate Your Web<br>Experience</h1>
+      <p>Create modern, fast, and responsive websites with ease.</p>
+      <button>Explore Services</button>
     </div>
+  </section>
+
 </body>
 </html>
